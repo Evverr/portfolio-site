@@ -15,6 +15,31 @@ body{
     background:#0f172a;
     color:rgb(124, 37, 37);
 }
+.top-menu{
+    position:sticky;
+    top:0;
+    z-index:10;
+    background:#111827;
+    padding:16px 20px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.25);
+}
+.top-menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+.top-menu a{
+    color:#e2e8f0;
+    text-decoration:none;
+    font-weight:bold;
+}
+.top-menu a:hover{
+    color:#38bdf8;
+}
 .container{
     max-width:900px;
     margin:auto;
@@ -52,17 +77,26 @@ footer{
 </style>
 </head>
 <body>
+<nav class="top-menu">
+<ul>
+<li><a href="#home">Главная</a></li>
+<li><a href="#about">Обо мне</a></li>
+<li><a href="#projects">Проекты</a></li>
+<li><a href="#gallery">Галерея</a></li>
+<li><a href="#contacts">Контакты</a></li>
+</ul>
+</nav>
 <div class="container">
-<h1>Моё портфолио</h1>
+<h1 id="home">Моё портфолио</h1>
 <p class="subtitle">Мой первый сайт через GitHub Pages</p>
-<div>ddddd</div>
+<div id="gallery">ddddd</div>
 
-<div class="card">
+<div class="card" id="about">
 <h2>Обо мне</h2>
 <p>Я учусь создавать сайты и публиковать их в интернете.</p>
 </div>
 
-<h2>Проекты</h2>
+<h2 id="projects">Проекты</h2>
 <div class="projects">
 <div class="project">
 <h3>Проект 1</h3>
@@ -80,7 +114,7 @@ footer{
 </div>
 </div>
 
-<footer>
+<footer id="contacts">
 <p>© 2026</p>
 </footer>
 </div>
